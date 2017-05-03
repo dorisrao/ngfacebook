@@ -1,0 +1,55 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.post-body {
+	border-bottom: dashed 1px #000;
+	padding: 5px;
+	margin-bottom: 5px;
+	min-height: 70px
+}
+
+.post-img {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+.post-text {
+	padding: 5px;
+	margin-left: 70px;
+	min-height: 60px;
+	display: block;
+	overflow: hidden;
+	font-family: Georgia, Times, Serif;
+}
+.post-time{
+	margin-top: 5px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 11px;
+	color: #666;
+}
